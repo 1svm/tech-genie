@@ -180,3 +180,18 @@ setInterval(function() {
         current = 1;
     } else current++;
 }, 2500);
+
+var s_menu = $('#nav');
+var origOffsetY = s_menu.offset().top;
+
+document.onscroll = function() {
+    if ($(window).scrollTop() >= origOffsetY) {
+        $(s_menu).removeClass('navbar-static-top').addClass('navbar-fixed-top');
+        // $('.content').addClass('menu-padding');
+        $(ideology).css('padding-top', $(s_menu).height());
+    } else {
+        $(s_menu).removeClass('navbar-fixed-top').addClass('navbar-static-top');
+        // $('.content').removeClass('menu-padding');
+        $(ideology).css('padding-top', 0);
+    }
+};
