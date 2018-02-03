@@ -356,7 +356,7 @@ button:hover,
 /* =Buttons
 -------------------------------------------------------------- */
 .btn {
-	border-radius: 45px;
+	border-radius: 0;
     margin-bottom: 1px;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
@@ -377,8 +377,8 @@ button:hover,
 
 .btn-default:hover {
     color: #fff;
-    background-color: #8980fe;
-    border-color: #8980fe;
+    background-color: rgba(59, 58, 54, 0.5);
+    border-color: #cecece;
 }
 
 .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
@@ -393,8 +393,8 @@ button:hover,
 
 .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
     color: #fff;
-    background-color: #8980fe;
-    border-color: #8980fe;
+    background-color: rgba(59, 58, 54, 0.5);
+    border-color: #cecece;
 }
 
 .btn-default.disabled.focus, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled].focus, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
@@ -984,11 +984,16 @@ ul.social-buttons li a:active {
 
 /* =Jumbotron Main
 -------------------------------------------------------------- */
+
+.jumbotron p {
+    font-weight: 300;
+}
+
 .jumbotron.jumbotron-main { 
 	height: 100%;
 	width: 100%;
 	font-family: 'Roboto', sans-serif;
-    color: #848484;
+    color: rgba(59, 58, 54, 0.8);
 	padding-top: 0;
 	padding-bottom: 0;
 	position: relative;
@@ -1027,9 +1032,9 @@ ul.social-buttons li a:active {
     clear: both;
 }
 
-.jumbotron.jumbotron-main a {
+/* .jumbotron.jumbotron-main a {
     color: #848484;
-}
+} */
 
 .center-vertically {
     display: table-cell;
@@ -2106,7 +2111,7 @@ footer hr {
 /* =Buttons
 -------------------------------------------------------------- */
 .btn-default {
-	color: #424242;
+	color: #848484;
     border-color: #cecece;
 }
 
