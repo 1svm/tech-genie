@@ -193,3 +193,7 @@ document.onscroll = function() {
         $(ideology).css('padding-top', 0);
     }
 };
+
+$(document).ready(function() {
+    $('.carouselTicker').carouselTicker();
+});

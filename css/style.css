@@ -151,7 +151,7 @@ button:hover,
 	box-shadow: none !important;
 	-moz-box-shadow: none !important;
 	-webkit-box-shadow: none !important;
-    border-color: #8980fe;
+    border-color: #b3c2bf;
 }
 
 .ticker {
@@ -413,14 +413,14 @@ button:hover,
 
 .btn-default:hover {
     color: #fff;
-    background-color: rgba(59, 58, 54, 0.5);
+    background-color: rgba(59, 58, 54, 0.8);
     border-color: #cecece;
 }
 
 .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
     color: #fff;
-    background-color: #8980fe;
-    border-color: #8980fe;
+    background-color: #b3c2bf;
+    border-color: #b3c2bf;
 }
 
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
@@ -435,8 +435,8 @@ button:hover,
 
 .btn-default.disabled.focus, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled].focus, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
     color: #fff;
-    background-color: #8980fe;
-    border-color: #8980fe;
+    background-color: rgba(59, 58, 54, 0.8);
+    border-color: #cecece;
 }
 
 .btn-default.disabled.focus, .btn-default.disabled:focus, .btn-default.disabled:hover, .btn-default[disabled].focus, .btn-default[disabled]:focus, .btn-default[disabled]:hover, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default:hover {
@@ -1886,7 +1886,7 @@ span.portfolio-hover a {
 }
 
 #contact .has-error .form-control {
-    border-color: #2F2F2F;
+    border-color: rgba(59, 58, 54, 0.8);
 }
 
 #contact .has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
@@ -2484,7 +2484,7 @@ span.portfolio-hover a {
 }
 
 .has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {
-    color: #929292;
+    color: rgba(59, 58, 54, 0.8);
 }
 
 .has-error .form-control:focus {
