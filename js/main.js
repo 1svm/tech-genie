@@ -197,3 +197,14 @@ document.onscroll = function() {
 $(document).ready(function() {
     $('.carouselTicker').carouselTicker();
 });
+
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+    items:3,
+    loop:true,
+    margin:30,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:false
+    });
+  });
