@@ -187,10 +187,10 @@ var origOffsetY = s_menu.offset().top;
 document.onscroll = function() {
     if ($(window).scrollTop() >= origOffsetY) {
         $(s_menu).removeClass('navbar-static-top').addClass('navbar-fixed-top');
-        $(ideology).css('padding-top', $(s_menu).height());
+        $(about).css('padding-top', $(s_menu).height() * 2);
     } else {
         $(s_menu).removeClass('navbar-fixed-top').addClass('navbar-static-top');
-        $(ideology).css('padding-top', 0);
+        $(about).css('padding-top', $(s_menu).height());
     }
 };
 
