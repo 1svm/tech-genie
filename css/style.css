@@ -2539,6 +2539,11 @@ footer hr {
     font-weight: bold;
 }
 
+.font-weight-bold {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
 /* .testimonials blockquote::before {
     width: 0; 
     height: 0;
