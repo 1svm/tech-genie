@@ -50,6 +50,8 @@
 	<link href="css/logoiconfont.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 	<link href="css/style.css" rel="stylesheet" title="main-css">
 
 	<!-- Alternate Stylesheets / choose what color and base you want and include the 2 files regularly AFTER style.css above -->
@@ -1253,7 +1255,7 @@
 				<div class="col-sm-6 col-lg-7 mt30-xs">
 					<form action="https://formspree.io/developershivam01@gmail.com" method="post" data-toggle="validator" id="contactForm" name="contactForm">
 						<div class="row mb10">
-							<div class="col-sm-6">
+							<div class="col-sm-4">
 								<div class="form-group">
 									<div class="controls">
 										<input class="form-control" data-error="This section is required." id="name" name="name" placeholder="Your Name *" required="" type="text">
@@ -1262,7 +1264,7 @@
 								</div>
 							</div>
 							<!-- /.column -->
-							<div class="col-sm-6">
+							<div class="col-sm-4">
 								<div class="form-group">
 									<div class="controls">
 										<input class="email form-control" data-error="This section is required." id="email" name="email" placeholder="Email *" required="" type="email">
@@ -1271,6 +1273,26 @@
 								</div>
 							</div>
 							<!-- /.column -->
+							<div class="col-sm-4">
+									<div class="form-group">
+										<div class="controls">
+											<select
+												class="selectpicker show-tick form-control"
+												data-error="This section is required."
+												name=""
+												title="Select Service Type...">
+													<option value="CHATBOTS">Chatbots</option>
+													<option value="WEB_DEVELOPMENT">Web Development</option>
+													<option value="MOBILE_APPLICATION">Mobile Application</option>
+													<option value="DIGITAL_MARKETING">Digital Marketing</option>
+													<option value="DESIGN_AND_ANIMATION">Design and Animation</option>
+													<option value="VIDEO">Video</option>
+												</select>
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+								</div>
+								<!-- /.column -->
 						</div>
 						<!-- /.row -->
 						<div class="row">

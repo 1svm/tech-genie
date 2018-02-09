@@ -36,7 +36,7 @@ function submitForm() {
         type: $form[0].method,
         url: $form[0].action,
         dataType: "json",
-        data: {name: name, email: email, message: message},
+        data: {name: name, email: email, message: message, type: $('.selectpicker').val()},
         success: function (text) {
             console.log(text);
             if (text.success === "email sent") {
@@ -226,5 +226,11 @@ $(document).ready(function () {
         autoplayTimeout: 3000,
         autoplayHoverPause: false
     });
+
+    $('.selectpicker').selectpicker({
+        style: 'btn-info',
+        size: 4
+      });
+      
 });
 

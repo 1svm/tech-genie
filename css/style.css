@@ -2543,7 +2543,39 @@ footer hr {
     font-weight: 400;
     letter-spacing: 1px;
 }
-
+/* 
+.btn-info {
+    color: inherit;
+    background: rgba(59, 58, 54, 0.8);
+    border: inherit;
+} */
+.btn-info.active.focus,
+.btn-info.active:focus,
+.btn-info.active:hover,
+.btn-info:active.focus,
+.btn-info:active:focus,
+.btn-info:active:hover,
+.open>.dropdown-toggle.btn-info.focus,
+.open>.dropdown-toggle.btn-info:focus,
+.open>.dropdown-toggle.btn-info:hover {
+	color: #fff;
+	background-color: #b3c2bf;
+    border: #b3c2bf;
+}
+.btn-info.active, .btn-info:active, .open>.dropdown-toggle.btn-info {
+    color: #fff;
+	background-color: #b3c2bf;
+    border: #b3c2bf;
+}
+.btn-info.focus, .btn-info:focus {
+    color: #fff;
+	background-color: #b3c2bf;
+    border: #b3c2bf;
+}
+.bootstrap-select .dropdown-toggle:focus {
+    outline: none;
+    outline-offset: 0;
+}
 /* .testimonials blockquote::before {
     width: 0; 
     height: 0;
