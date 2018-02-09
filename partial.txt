@@ -448,3 +448,143 @@
 	</section>
 	<!-- /.section -->
 	<!-- End Timeline -->
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="row">
+				<!-- Begin Quote Carousel -->
+				<div id="carousel" class="testimonial-carousel pt40 pb20">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 text-center">
+								<!-- col-md-10 col-md-offset-1 -->
+								<!-- <span class="pe-7s-close heading-3-icon"></span> -->
+								<h2 class="heading-3">Testimonials</h2>
+
+								<div class="owl-carousel">
+
+									<div class="testimonials">
+										<div class="active item">
+											<blockquote class="services-box">
+												<p class="no-margin text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+											</blockquote>
+											<div class="carousel-info">
+												<img alt="" src="images/people/Nishant.jpg" class="pull-left">
+												<div class="pull-left">
+													<span class="testimonials-name">Nishant</span>
+													<span class="testimonials-post">Prospect</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="testimonials">
+										<div class="active item">
+											<blockquote class="services-box">
+												<p class="no-margin text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+											</blockquote>
+											<div class="carousel-info">
+												<img alt="" src="images/people/Tarun.jpg" class="pull-left">
+												<div class="pull-left">
+													<span class="testimonials-name">Tarun</span>
+													<span class="testimonials-post">ACC limited</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="testimonials">
+										<div class="active item">
+											<blockquote class="services-box">
+												<p class="no-margin text-small">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+											</blockquote>
+											<div class="carousel-info">
+												<img alt="" src="images/people/Arjun.jpg" class="pull-left">
+												<div class="pull-left">
+													<span class="testimonials-name">Arjun</span>
+													<span class="testimonials-post">Jack Box</span>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+
+							</div>
+
+						</div>
+						<!-- /.column -->
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.carousel -->
+			<!-- End Quote Carousel -->
+
+
+
+
+
+				<!-- Begin Our Count -->
+	<section id="ourcount" class="section-padding parallax-window" data-parallax="scroll" data-image-src="images/slider1.jpg">
+		<div class="container">
+			<div class="row mb30">
+				<div class="section-title col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
+					<h2>The Count</h2>
+					<span class="section-divider mb15"></span>
+					<p class="no-margin">We have spent various amounts of time on activities. Oh and we like coffee and free time as well.</p>
+				</div>
+				<!-- /.column -->
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-sm-6 col-md-3 item leftReveal">
+					<div class="circle-hold">
+						<i class="ion-coffee"></i>
+					</div>
+					<h2 class="timer mb5" data-from="1" data-to="4321" data-refresh-interval="20">1</h2>
+					<p class="no-margin">Cups of coffee</p>
+				</div>
+				<!-- /.column -->
+				<div class="col-sm-6 col-md-3 item mt30-xs rightReveal">
+					<div class="circle-hold">
+						<i class="ion-code"></i>
+					</div>
+					<h2 class="timer mb5" data-from="1" data-to="15381" data-refresh-interval="20">1</h2>
+					<p class="no-margin">Lines of code</p>
+				</div>
+				<!-- /.column -->
+				<div class="col-sm-6 col-md-3 item mt30-xs mt30-sm leftReveal">
+					<div class="circle-hold">
+						<i class="ion-android-people"></i>
+					</div>
+					<h2 class="timer mb5" data-from="1" data-to="17" data-refresh-interval="20">1</h2>
+					<p class="no-margin">Employees</p>
+				</div>
+				<!-- /.column -->
+				<div class="col-sm-6 col-md-3 item mt30-xs mt30-sm rightReveal">
+					<div class="circle-hold">
+						<i class="ion-android-restaurant"></i>
+					</div>
+					<h2 class="timer mb5" data-from="1" data-to="921" data-refresh-interval="20">1</h2>
+					<p class="no-margin">Pizzas eaten</p>
+				</div>
+				<!-- /.column -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.section -->
+	<!-- End Our Count -->

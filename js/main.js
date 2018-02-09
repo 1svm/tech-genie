@@ -16,7 +16,8 @@ $('#thework').mixItUp({
 
 
 /* ---- contact form ---- */
-$("#contactForm").validator().on("submit", function (event) {
+var $form = $("#contactForm");
+$form.validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         formError();
         submitMSG(false, "Did you fill in the form properly?");
@@ -30,15 +31,14 @@ function submitForm() {
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var email = $("#email").val();
-    var msg_subject = $("#msg_subject").val();
     var message = $("#message").val();
     $.ajax({
-        type: "POST",
-        url: "php/contact.php",
-        data: "name=" + name + "&email=" + email + "&msg_subject=" +
-            msg_subject + "&message=" + message,
+        type: $form[0].method,
+        url: $form[0].action,
+        dataType: "json",
+        data: {name: name, email: email, message: message},
         success: function (text) {
-            if (text == "success") {
+            if (text.success == "email sent") {
                 formSuccess();
             } else {
                 formError();
@@ -50,7 +50,7 @@ function submitForm() {
 
 function formSuccess() {
     $("#contactForm")[0].reset();
-    submitMSG(true, "Message Submitted!")
+    submitMSG(true, "Message Submitted!");
 }
 
 function formError() {
@@ -63,9 +63,9 @@ function formError() {
 
 function submitMSG(valid, msg) {
     if (valid) {
-        var msgClasses = "h4 text-success";
+        var msgClasses = "text-success";
     } else {
-        var msgClasses = "h4 text-danger";
+        var msgClasses = "text-danger";
     }
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
