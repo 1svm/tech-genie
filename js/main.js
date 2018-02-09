@@ -38,11 +38,12 @@ function submitForm() {
         dataType: "json",
         data: {name: name, email: email, message: message},
         success: function (text) {
-            if (text.success == "email sent") {
+            console.log(text);
+            if (text.success === "email sent") {
                 formSuccess();
             } else {
                 formError();
-                submitMSG(false, text);
+                submitMSG(false, text.success.toTitleCase());
             }
         }
     });
