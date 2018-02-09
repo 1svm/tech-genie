@@ -214,10 +214,6 @@ document.onscroll = function () {
 };
 
 $(document).ready(function () {
-    $('.carouselTicker').carouselTicker();
-});
-
-$(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         items: 3,
         loop: true,
@@ -234,3 +230,4 @@ $(document).ready(function () {
       
 });
 
+$('.carouselTicker').carouselTicker();
