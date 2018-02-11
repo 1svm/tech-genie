@@ -73,7 +73,7 @@
 /* =Common Styles
 -------------------------------------------------------------- */
 body {
-    background: #e8ede4;
+    background: #f5f5f5;
     color: #7B7B7B;
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
@@ -1043,7 +1043,7 @@ ul.social-buttons li a:active {
 	background-repeat: no-repeat;
 	background-size: cover;
     background-position: 50% 50%;
-    background: #e9ece5;
+    background: #ffffff;
     /* background: #ADA996;
     background: -moz-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
     background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
@@ -1169,7 +1169,7 @@ ul.social-buttons li a:active {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
-
+/* 
 #our-process-title::after {
     content: " ";
     position: absolute;
@@ -1181,7 +1181,7 @@ ul.social-buttons li a:active {
     left: 50%;
     margin-left: -14px;
     bottom: -14px;
-}
+} */
 
 #our-process h2 {
 	font-size: 33px;
@@ -2281,11 +2281,11 @@ footer hr {
 /* =Our Process
 -------------------------------------------------------------- */
 #our-process-title {
-	background-color: #fff;
+	background-color: #f5f5f5;
 }
 
 #our-process-title h4 {
-	color: #414141;
+	color: #424242;
 }
 
 #our-process-title::after {
@@ -2293,7 +2293,7 @@ footer hr {
 }
 
 #our-process h2 {
-	color: #414141;
+	color: #424242;
 }
 
 #our-process .process-box {
@@ -2602,3 +2602,7 @@ footer hr {
     border-width: 20px 20px 0 0;
     border-color: #e63f0c transparent transparent transparent;
 } */
+
+.border-top {
+    
+}
