@@ -2600,3 +2600,9 @@ footer hr {
 .border-top {
     border-top: 2px solid #E6E6E6;
 }
+
+.icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 32px;
+}
