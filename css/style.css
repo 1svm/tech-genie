@@ -1164,10 +1164,10 @@ ul.social-buttons li a:active {
 #our-process-title h4 {
 	font-family: 'Montserrat', sans-serif;
 	color: #fff;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	/* letter-spacing: 2px; */
 }
 /* 
 #our-process-title::after {
@@ -1364,9 +1364,9 @@ ul.social-buttons li a:active {
     float: left;
     font-size: 44px;
     color: #fff;
-    margin-right: 25px;
+    margin-right: 20px;
     clear: both;
-    margin-top: 5px;
+    /* margin-top: 5px; */
 }
 
 /* =Profile
