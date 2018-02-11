@@ -32,21 +32,32 @@ function submitForm() {
     var name = $("#name").val();
     var email = $("#email").val();
     var message = $("#message").val();
-    $.ajax({
-        type: $form[0].method,
-        url: $form[0].action,
-        dataType: "json",
-        data: {name: name, email: email, message: message, type: $('.selectpicker').val()},
-        success: function (text) {
-            console.log(text);
-            if (text.success === "email sent") {
-                formSuccess();
-            } else {
-                formError();
-                submitMSG(false, text.success.toTitleCase());
+    var type = $('#selectPick').val();
+    if (!type) {
+        submitMSG(false, "Please select service type.");
+        return;
+    } else {
+        $.ajax({
+            type: $form[0].method,
+            url: $form[0].action,
+            dataType: "json",
+            data: {
+                name: name,
+                email: email,
+                message: message,
+                type: type
+            },
+            success: function (text) {
+                console.log(text);
+                if (text.success === "email sent") {
+                    formSuccess();
+                } else {
+                    formError();
+                    submitMSG(false, text.success.toTitleCase());
+                }
             }
-        }
-    });
+        });
+    }
 }
 
 function formSuccess() {
@@ -226,8 +237,8 @@ $(document).ready(function () {
     $('.selectpicker').selectpicker({
         style: 'btn-info',
         size: 4
-      });
-      
+    });
+
 });
 
 $('.carouselTicker').carouselTicker();
