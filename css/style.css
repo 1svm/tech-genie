@@ -962,7 +962,7 @@ ul.social-buttons li a:active {
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: #8980fe;
+    color: #63C0FF;
 	background-color: transparent;
 }
 
@@ -1139,7 +1139,7 @@ ul.social-buttons li a:active {
 	border-bottom: 1px solid #fff;
 	padding-bottom: 4px;
     display: inline-block;
-    color: #414141;
+    color: #63C0FF;
 	border-color: #cecece;
 }
 
@@ -1220,7 +1220,7 @@ ul.social-buttons li a:active {
 
 #our-process .process-icons {
 	font-size: 90px;
-	color: #8980fe;
+	color: #63C0FF;
 }
 
 #our-process .process-content {
