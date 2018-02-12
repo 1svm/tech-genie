@@ -1996,7 +1996,7 @@ footer hr {
     .modal-header .close { margin-right:-62px; }
     .breadcrumb-holder { padding:12px 0 12px 0; }
     .ticker { height:40px; }
-    .ticker h1 { height:40px; }
+    .ticker h1 { height:40px; font-size: 28px;}
     .big-logo { font-size:50px; }
     .jumbotron.jumbotron-register { height:initial; }
     .jumbotron.jumbotron-register h1 { font-size:40px; }
