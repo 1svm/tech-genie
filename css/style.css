@@ -999,8 +999,8 @@ ul.social-buttons li a:active {
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #8980fe;
-    background-color: #8980fe;
+    border-color: #63C0FF;
+    background-color: #63C0FF;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -1008,7 +1008,7 @@ ul.social-buttons li a:active {
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #7369F9;
+    background-color: #63C0FF;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
