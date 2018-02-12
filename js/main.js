@@ -21,10 +21,10 @@ $form.validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         formError();
         submitMSG(false, "Did you fill in the form properly?");
-    } else {
+    }/*  else {
         event.preventDefault();
         submitForm();
-    }
+    } */
 });
 
 function submitForm() {
@@ -37,12 +37,13 @@ function submitForm() {
         submitMSG(false, "Please select service type.");
         return;
     } else {
-        console.log(name,email,message,type);
+        var d = encodeURIComponent(`name=${name}&email=${email}&message=${message}&type=${type}`);
+        console.log(d);
         $.ajax({
             type: 'POST',
             url: 'https://formspree.io/shivamkaushik91@gmail.com',
             dataType: "json",
-            data: {name: name, email: email, message: message, type: type},
+            data: d,
             success: function (text) {
                 console.log(text);
                 if (text.success === "email sent") {
@@ -51,6 +52,10 @@ function submitForm() {
                     formError();
                     submitMSG(false, text.success.toTitleCase());
                 }
+            },
+            error: function(err) {
+                console.log(err);
+                
             }
         });
     }
@@ -229,12 +234,6 @@ $(document).ready(function () {
         autoplayTimeout: 3000,
         autoplayHoverPause: false
     });
-
-    $('.selectpicker').selectpicker({
-        style: 'btn-info',
-        size: 4
-    });
-
 });
 
 $('.carouselTicker').carouselTicker();
