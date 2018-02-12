@@ -37,16 +37,12 @@ function submitForm() {
         submitMSG(false, "Please select service type.");
         return;
     } else {
+        console.log(name,email,message,type);
         $.ajax({
-            type: $form[0].method,
-            url: $form[0].action,
+            type: 'POST',
+            url: 'https://formspree.io/developershivam01@gmail.com',
             dataType: "json",
-            data: {
-                name: name,
-                email: email,
-                message: message,
-                type: type
-            },
+            data: {name: name, email: email, message: message, type: type},
             success: function (text) {
                 console.log(text);
                 if (text.success === "email sent") {
