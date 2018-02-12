@@ -40,7 +40,7 @@ function submitForm() {
         console.log(name,email,message,type);
         $.ajax({
             type: 'POST',
-            url: 'https://formspree.io/developershivam01@gmail.com',
+            url: 'https://formspree.io/shivamkaushik91@gmail.com',
             dataType: "json",
             data: {name: name, email: email, message: message, type: type},
             success: function (text) {
