@@ -577,21 +577,18 @@ button:hover,
 /* =Alerts
 -------------------------------------------------------------- */
 .alert{
-    border-radius: 45px;
-    padding: 15px 15px 15px 18px;
-    margin-bottom: 15px;
+    border-radius: 0 !important;
+    padding: 15px 30px 15px 10px;
 }
 
 .alert-success {
     color: #FFFFFF;
-    background-color: #5CB85C;
-    border-color: #5CB85C;
+    background-color: #63C0FF;
+    border-color: #63C0FF;
 }
 
 .alert-info {
     color: #fff;
-    background-color: #5bc0de;
-    border-color: #46b8da;
 }
 
 .alert-warning {
@@ -869,7 +866,10 @@ ul.social-buttons li a:active {
 }
 
 .close {
-    font-size: 45px;
+    position: absolute;
+    top:11px;
+    right: 10px;
+    font-size: 28px;
     color: #fff;
     text-shadow: none;
     filter: none;

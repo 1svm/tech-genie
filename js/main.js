@@ -21,10 +21,11 @@ $form.validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         formError();
         submitMSG(false, "Did you fill in the form properly?");
-    }/*  else {
-        event.preventDefault();
-        submitForm();
-    } */
+    } else {
+        localStorage.setItem('isFormSubmitted', 1);
+        // event.preventDefault();
+        // submitForm();
+    }
 });
 
 function submitForm() {
@@ -234,6 +235,23 @@ $(document).ready(function () {
         autoplayTimeout: 3000,
         autoplayHoverPause: false
     });
+
+    var $is = localStorage.getItem('isFormSubmitted');
+    if(!$is) {
+        localStorage.setItem('isFormSubmitted', 0);
+    } else if($is === '1') {
+        $('.top-left').notify({
+            type: 'alert in fade alert-success text-small',
+            message: { text: 'Thank you. Message Submitted Successfully!' },
+            fadeOut: { enabled: true, delay: 4000 },
+            onClose: function() {
+                localStorage.setItem('isFormSubmitted', 0);
+            }
+          }).show();
+    }
+
+    
+
 });
 
 $('.carouselTicker').carouselTicker();
